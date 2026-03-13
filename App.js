@@ -83,56 +83,73 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 30,
-    marginTop: 40
+    backgroundColor: 'white',
+    paddingTop: 60,
+    paddingHorizontal: 20,
   },
   titulo: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20
-  },
-  inputContainer: {
-    flexDirection: "row",
-    marginBottom: 20
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: 'black',
+    marginBottom: 20,
   },
   input: {
     flex: 1,
+    height: 50,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    paddingHorizontal: 15,
+    fontSize: 16,
     borderWidth: 1,
-    borderColor: "#ccc",
-    padding: 10,
-    borderRadius: 8
+    borderColor: '#ddd',
   },
   botaoAdicionar: {
+    width: 50,
+    height: 50,
+    backgroundColor: '#d80000',
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
     marginLeft: 10,
-    backgroundColor: "#2ecc71",
-    padding: 15,
-    borderRadius: 8
   },
-  textoBotaoAdicionar: {
-    color: "#fff",
-    fontSize: 18
+  textoBotaoAdicionar : {
+    color: '#fff',
+    fontSize: 24,
+    fontWeight: 'bold',
   },
   itemLista: {
-    flexDirection: "row",
-    justifyContent: "space-between",
+    flexDirection: 'row',
+    backgroundColor: '#fff',
     padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#eee"
+    borderRadius: 8,
+    marginBottom: 10, 
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
   },
   textoItem: {
-    fontSize: 16
+    fontSize: 16,
+    color: '#000',
+    flex: 1,
   },
   botaoRemover: {
-    backgroundColor: "#e74c3c",
-    padding: 8,
-    borderRadius: 5
+    backgroundColor: '#ff3830',
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   textoBotaoRemover: {
-    color: "#fff"
+    color: '#fff',
+    fontWeight: 'bold',
   },
   textoVazio: {
-    textAlign: "center",
-    marginTop: 20,
-    color: "#999"
+    textAlign: 'center',
+    color : '#888',
+    fontSize: 16,
   }
 });
